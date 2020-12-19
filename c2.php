@@ -82,8 +82,8 @@ tr:nth-child(even) {
 $Id1=$_POST['Sender1'];
   	$Id2=$_POST['Receiver1'];
      $Amount=$_POST['Amount'];
-     $selectquery1 = "select  current_balance, name from customers where Id=$Id1 ";
-      $selectquery2 = "select   name from customers where Id=$Id2 ";
+     $selectquery1 = "select  current_balance, name from Customers where Id=$Id1 ";
+      $selectquery2 = "select   name from Customers where Id=$Id2 ";
       $row1 = mysqli_query($con,$selectquery1);
       $nums = mysqli_num_rows($row1);
 $row2 = mysqli_query($con,$selectquery2);
@@ -98,7 +98,7 @@ $nums = mysqli_num_rows($row2);
  }
  
   if((int) $current >=(int)$Amount){
-  	 $sql1 =" UPDATE customers  SET current_balance=current_balance- $Amount WHERE Id=$Id1";
+  	 $sql1 =" UPDATE Customers  SET current_balance=current_balance- $Amount WHERE Id=$Id1";
       
        $query1 = mysqli_query($con,$sql1);
  
@@ -106,7 +106,7 @@ $nums = mysqli_num_rows($row2);
  
  
  
-$sql2 = " UPDATE customers  SET current_balance=current_balance + $Amount WHERE Id=$Id2";
+$sql2 = " UPDATE Customers  SET current_balance=current_balance + $Amount WHERE Id=$Id2";
        $query2 = mysqli_query($con,$sql2);
         
 
