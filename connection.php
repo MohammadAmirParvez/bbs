@@ -1,14 +1,14 @@
 <?php
 
-$username = "root";
-$password = "";
+$username = "id15714734_mohammadamirparvez";
+$password = "KalaKala@786";
 $server = 'localhost';
-$db='database';
+$db='id15714734_database';
 
 $con = mysqli_connect($server,$username,$password,$db);
 
 if($con){
-	
+	echo "Connected";
 	
 }else
 {
