@@ -8,7 +8,6 @@ $db='id15714734_database';
 $con = mysqli_connect($server,$username,$password,$db);
 
 if($con){
-	echo "Connected";
 	
 }else
 {
