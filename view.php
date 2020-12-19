@@ -98,7 +98,7 @@ tr:nth-child(even) {
 <tbody>
 	 <?php
   include 'connection.php';
-  $selectquery = "select * from customers";
+  $selectquery = "select * from Customers";
 
   $query = mysqli_query($con,$selectquery);
 
