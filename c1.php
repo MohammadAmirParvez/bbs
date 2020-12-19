@@ -119,7 +119,7 @@ if (isNaN(x)) {
   $Id= $_GET['Id'];
   
   
-  $selectquery = "select  * from customers where Id=$Id ";
+  $selectquery = "select  * from Customers where Id=$Id ";
  $query = mysqli_query($con,$selectquery);
 
   $nums = mysqli_num_rows($query);
@@ -143,7 +143,7 @@ if (isNaN(x)) {
 
 
   $Id= $_GET['Id'];
-   $selectquery = "select  name from customers where Id=$Id ";
+   $selectquery = "select  name from Customers where Id=$Id ";
  $query = mysqli_query($con,$selectquery);
 
   $nums = mysqli_num_rows($query);
